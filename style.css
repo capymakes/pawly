@@ -1,0 +1,26 @@
+:root { --paper:#ffffff; --surface:#ffffff; --ink:#111318; --ink2:#68707c; --ink3:#9ba1ac; --line:#e7e9ec; --clover:#059669; --clover-soft:#e7f7f0; --marigold:#d97706; }
+@media (prefers-color-scheme: dark) { :root { --paper:#121212; --surface:#1c1c1e; --ink:#f5f6f7; --ink2:#9ba1ac; --ink3:#6b7280; --line:#2e2f33; --clover:#34d399; --clover-soft:#0f2e24; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif; -webkit-font-smoothing:antialiased; }
+a { color:var(--clover); }
+.wrap { max-width:720px; margin:0 auto; padding:0 20px 64px; }
+header { display:flex; align-items:center; justify-content:space-between; padding:20px 0; }
+.brand { display:flex; align-items:center; gap:10px; font-weight:700; text-decoration:none; color:var(--ink); font-size:20px; }
+.brand img { width:36px; height:36px; border-radius:9px; }
+nav a { margin-left:18px; font-size:15px; color:var(--ink2); text-decoration:none; }
+nav a:hover { color:var(--clover); }
+h1 { font-size:40px; line-height:1.15; margin:24px 0 8px; letter-spacing:-0.01em; }
+h2 { font-size:22px; margin:36px 0 8px; }
+h3 { font-size:17px; margin:24px 0 6px; }
+p.lead { font-size:20px; color:var(--ink2); margin:0 0 24px; }
+.muted { color:var(--ink3); font-size:14px; }
+.card { background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:20px 22px; margin:16px 0; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin:24px 0; }
+.grid .card { margin:0; }
+.card h3 { margin-top:0; }
+.btn { display:inline-block; background:var(--clover); color:#fff; padding:12px 20px; border-radius:12px; text-decoration:none; font-weight:600; }
+footer { border-top:1px solid var(--line); margin-top:48px; padding-top:20px; color:var(--ink3); font-size:14px; }
+footer a { color:var(--ink3); margin-right:14px; }
+ul { padding-left:22px; }
+table { width:100%; border-collapse:collapse; font-size:15px; }
+td, th { text-align:left; padding:8px 6px; border-bottom:1px solid var(--line); vertical-align:top; }
